@@ -18,35 +18,45 @@ html,body{
 h1,h2,h3,h4,h5,h6,p{
     margin: 0px;
     padding: 0px;
-    
+}
+.w-1300{
+    width: 1300px;
+}
+.sticky-head{
+    height: 450px;
+    z-index: 3;
+    position: relative;
+}
+.sti{
+    position: sticky;
+    top:0;
 }
 .login-h {
     height: 80px;
     background-color: #deebfa;
-    position: fixed;
-    top: 0px;
+    z-index: 2;
+    position: relative;
 }
 .login{
-    width: 1300px;
     justify-content: end;
-
 }
-
 .log-img{
     width: 25px;
     height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
 }
 .log-img img{
     width: 100%;
+    
 }
+
 .header{
     width: 100%;
-    position: fixed;
     height: 70px;
     background-color: #deebfa;
-}
-.header-ti{
-    width: 1300px;
+    z-index: 2;
+    position: relative;
 }
 .header-ti img{
     width: 200px;
@@ -64,22 +74,48 @@ h1,h2,h3,h4,h5,h6,p{
 .header-ti h2{
     font-size: 1.2rem;
 }
+.header1{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.header1-ti img{
+    width: 200px;
+}
+.header1-ti ul{
+    width: 100%;
+    padding: 0px;
+    justify-content: space-evenly;
+    
+}
+.header1-ti a {
+    color: #052855;
+    text-decoration: none;
+}
+.header1-ti h2{
+    font-size: 1.2rem;
+}
 .ti-btn{
     width: 260px;
     height:60px;
     background-color: rgb(0, 132, 255);
     border-radius: 10px ;
     color: white;
-    
 } 
+.bd-l .textbr{
+    height: 100px;
+    width: 100%;
+}
 .bd-head{
     height: 700px;
     background-color: #deebfa;
     align-items: end;
-    margin-top: 70px;
+    margin-top: -300px;
 }
 .bd-h-info{
-    width: 1300px;
     height: 700px;
     background-color: #deebfa;
     justify-content: space-between;
@@ -112,6 +148,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .bd-r{
     align-items: end;
+    z-index: 0;
 }
 .bd-top-img{
     height: 85%;
@@ -122,11 +159,7 @@ h1,h2,h3,h4,h5,h6,p{
     border-top-right-radius: 50%;
     overflow: hidden;
 }
-.bd-r img{
-    height: 100%;
-    width: 142%;
-    margin-left: -21%;
-}
+
 .just-a-box{
     width: 100%;
     height: 95px;
@@ -153,12 +186,10 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: column;
 }
 .main-item{
-    width: 1300px;
     height:500px;
     justify-content: space-between;
 }
 .main-item1{
-    width: 1300px;
     height: 500px;
     margin-top: 8%;
     justify-content: space-between;
@@ -232,7 +263,6 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top:70px;
 }
 .more-tool-info-box{
-    width: 1300px;
     height: 800px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -274,7 +304,6 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 1.2rem;
 }
 .some-sign{
-    width: 1300px;
     margin-top: 50px;
     justify-content: space-between;
 }
@@ -303,7 +332,6 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: column;
 }
 .about-us{
-    width: 1300px;
     justify-content: start;
 }
 .about-us p{
@@ -312,12 +340,10 @@ h1,h2,h3,h4,h5,h6,p{
     padding-right: 20px;
 }
 .aline{
-    width: 1300px;
     margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.226);
 }
 .to-many-type{
-    width: 1300px;
     padding-top: 20px;
     justify-content: space-between;
 }
@@ -341,7 +367,6 @@ h1,h2,h3,h4,h5,h6,p{
     flex-grow: 2;
 }
 .a-shaking-btn{
-    width: 1300px;
     padding-top: 20px;
     justify-content: end;
 }
@@ -353,7 +378,6 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 1.2rem;
 }
 .some-service-info-and-socialmedia{
-    width: 1300px;
     justify-content: space-between;
     margin-top: 40px;
 }
@@ -367,7 +391,6 @@ h1,h2,h3,h4,h5,h6,p{
     height: 40px
 }
 .map-and-rules{
-    width: 1300px;
     height: 50px;
     color: gray;
 }
@@ -375,5 +398,51 @@ h1,h2,h3,h4,h5,h6,p{
     height: 60%;
     border-right: 1px solid gray;
     margin: 0 20px 0 20px ;
-    
+}
+.afix-circle{
+    position: fixed;
+    right: 50px;
+    top: 90%;
+    width: 60px;height: 60px;
+    border-radius: 100%;
+    background-color: rgb(67, 142, 255);
+    overflow: hidden;
+}
+.afix-circle img{
+    width: 70%;
+}
+.look-more a:hover p{
+    animation-name: arrowrg;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes arrowrg {
+    0%{margin-right: 0px;}
+    100%{margin-right: 10px;}
+}
+body:hover .shaking-btn{
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake{
+    0%{margin-right: 10px;}
+    25%{margin-right: -10px;}
+    50%{margin-right: 0px;}
+}
+
+
+
+.slider{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.slider img{
+    width: 100%;
+}
+.text-slider{
+    width: 100px;
+    margin-left: 60px;
+    rotate: 270deg;
 }

@@ -1,7 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
 }
 .w-100{
     width: 100%;
@@ -35,6 +35,7 @@ h1,h2,h3,h4,h5,h6,p{
     height: 80px;
     background-color: #deebfa;
     z-index: 2;
+    color: #052855;
     position: relative;
 }
 .login{
@@ -106,7 +107,7 @@ h1,h2,h3,h4,h5,h6,p{
     color: white;
 } 
 .bd-l .textbr{
-    height: 100px;
+    height: 0px;
     width: 100%;
 }
 .bd-head{
@@ -114,6 +115,7 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: #deebfa;
     align-items: end;
     margin-top: -300px;
+    color: #052855;
 }
 .bd-h-info{
     height: 700px;
@@ -184,6 +186,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding-top: 64px;
     padding-bottom: 64px;
     flex-direction: column;
+    color: #052855;
 }
 .main-item{
     height:500px;
@@ -295,6 +298,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 20px;
 }
 .body-foot{
+    color: #052855;
     height: 500px;
     flex-direction: column;
 }
@@ -442,7 +446,8 @@ body:hover .shaking-btn{
     width: 100%;
 }
 .text-slider{
-    width: 100px;
-    margin-left: 60px;
+    width: 50px;
+    margin-left: 80px;
     rotate: 270deg;
+    margin-top: 50px;
 }
